@@ -1,0 +1,9 @@
+Building ONIX
+
+See doc/readme-qt.rst for instructions on building ONIX-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of ONIX.
+
+See doc/build-*.txt for instructions on building ONIXd,
+the intended-for-services, no-graphical-interface, reference
+implementation of ONIX.
