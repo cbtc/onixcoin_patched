@@ -46,6 +46,7 @@ public:
     QLabel *labelImmatureText;
     QLabel *labelImmature;
     QSpacerItem *verticalSpacer;
+    QLabel *label_2;
     QVBoxLayout *verticalLayout_3;
     QFrame *frame_2;
     QVBoxLayout *verticalLayout;
@@ -60,7 +61,7 @@ public:
     {
         if (OverviewPage->objectName().isEmpty())
             OverviewPage->setObjectName(QString::fromUtf8("OverviewPage"));
-        OverviewPage->resize(573, 342);
+        OverviewPage->resize(791, 502);
         topLayout = new QVBoxLayout(OverviewPage);
         topLayout->setObjectName(QString::fromUtf8("topLayout"));
         labelAlerts = new QLabel(OverviewPage);
@@ -164,6 +165,14 @@ public:
 
         verticalLayout_2->addItem(verticalSpacer);
 
+        label_2 = new QLabel(OverviewPage);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setPixmap(QPixmap(QString::fromUtf8(":/4e87f8a607435e1e1bd73083fb258453.png")));
+        label_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        label_2->setMargin(38);
+
+        verticalLayout_2->addWidget(label_2);
+
 
         horizontalLayout->addLayout(verticalLayout_2);
 
@@ -247,6 +256,7 @@ public:
 #ifndef QT_NO_TOOLTIP
         labelImmature->setToolTip(QApplication::translate("OverviewPage", "Mined balance that has not yet matured", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
+        label_2->setText(QString());
         label_4->setText(QApplication::translate("OverviewPage", "<b>Recent transactions</b>", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
         labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the ONIX network after a connection is established, but this process has not completed yet.", 0, QApplication::UnicodeUTF8));

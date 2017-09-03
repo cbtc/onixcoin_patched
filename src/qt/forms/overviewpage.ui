@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>573</width>
-    <height>342</height>
+    <width>791</width>
+    <height>502</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -202,6 +202,22 @@
          </property>
         </spacer>
        </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../onixlogo.qrc">:/4e87f8a607435e1e1bd73083fb258453.png</pixmap>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="margin">
+          <number>38</number>
+         </property>
+        </widget>
+       </item>
       </layout>
      </item>
      <item>
@@ -296,6 +312,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../onixlogo.qrc"/>
+ </resources>
  <connections/>
 </ui>
